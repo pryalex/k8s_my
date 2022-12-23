@@ -1,0 +1,9 @@
+replicaCount: 1
+
+clusterName: test
+region: eu-west-2
+
+serviceAccount:
+  create: false
+  name: cluster-autoscaler-aws-cluster-autoscaler
+

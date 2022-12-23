@@ -1,0 +1,19 @@
+replicaCount: 1
+
+autoDiscovery:
+  clusterName: k8s_alex_cl
+
+awsRegion: eu-west-2
+
+image:
+  tag: v1.24.0
+
+extraArgs:
+  logtostderr: true
+  stderrthreshold: info
+  v: 4
+
+rbac:
+  serviceAccount:
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::881750644134:role/Need_to_change_AmazonEKSClusterAutoscalerRole
